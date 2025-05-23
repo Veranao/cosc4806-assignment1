@@ -10,6 +10,7 @@
   $_SESSION['username'] = $username;
 
   if ($valid_username == $username && $valid_password == $password) {
+    $_SESSION['authenticated'] = 1;
     header('location: /');
     echo "successful login";
   } else {

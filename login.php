@@ -1,5 +1,11 @@
 <?php
   session_start();
+
+  if (!isset($_SESSION['failed_attempts'])) {
+      echo "This is your first attempt";
+  } else {
+    echo "This is unsuccessful attempt number " . $_SESSION['failed_attempts'];
+  }
 ?>
 
 <!DOCTYPE html>
