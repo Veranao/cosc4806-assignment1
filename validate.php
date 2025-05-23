@@ -3,10 +3,11 @@
     
   $valid_username = "victor";
   $valid_password = "php123";
-  $_SESSION['failed_attempts'] = 1;
   
   $username = $_REQUEST['username'];
   $password = $_REQUEST['password'];
+
+  $_SESSION['username'] = $username;
 
   if ($valid_username == $username && $valid_password == $password) {
     header('location: /');
