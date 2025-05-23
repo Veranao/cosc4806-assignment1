@@ -3,7 +3,8 @@
     <title>PHP Test</title>
   </head>
   <body>
-    <?php echo '<p>Hello Assignment 2</p>'; ?> 
-    <h1> First Test </h1>
-
+    <?php echo '<p>Hello Assignment 1</p>'; ?> 
+    <a href="login.php">
+      <button id="go" name="go" type="button"> Go To Login Page </button>
+    </a>
 </html>
