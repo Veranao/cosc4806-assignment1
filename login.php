@@ -1,6 +1,10 @@
 <?php
   session_start();
 
+  if ($_SESSION['authenticated'] == 1) {
+    header('location: /');
+  }
+
   if (!isset($_SESSION['failed_attempts'])) {
       echo "This is your first attempt";
   } else {
