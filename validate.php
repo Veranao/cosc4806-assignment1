@@ -1,7 +1,7 @@
 <?php
   session_start();
     
-  $valid_username = "victor";
+  $valid_username = "Victor";
   $valid_password = "php123";
   
   $username = $_REQUEST['username'];
